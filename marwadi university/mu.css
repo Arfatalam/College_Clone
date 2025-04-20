@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+.container {
+    width: 100%;
+    height: 40vh;
+    background-image: url('maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: change 10s infinite ease-in-out;
+    position: relative;
+}
+
+/* Header Text */
+.container h1 {
+    color: white;
+    background-color: rgba(242, 138, 138, 0.906);
+    width: 60%;
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+    margin: 5% auto 0 auto;
+}
+
+/* Dropdown and Nav */
+.rs ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.rs ul li {
+    position: relative;
+}
+
+ul li a {
+    padding: 10px 15px;
+    color: #f2e3e3;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #8a8080c4;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    z-index: 1;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li {
+    margin: 2px 0;
+}
+
+ul li a:hover {
+    background: #b6a2a250;
+}
+
+/* Logo */
+.ps {
+    height: auto;
+    max-width: 15%;
+}
+
+/* Sticky Nav */
+.hs {
+    background-color: rgba(0, 0, 0, 0.872);
+    height: auto;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: 1%;
+}
+
+.hs ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hs ul li a, .qs, .ks, .ls {
+    color: white;
+    background-color: rgba(37, 34, 34, 0.872);
+    border: none;
+    padding: 6px 10px;
+}
+
+/* Dropdowns in Nav */
+.qs, .ks, .ls {
+    font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes change {
+    0% {
+        background-image: url('Marwadi_cikk_1.jpg');
+    }
+    50% {
+        background-image: url('gdgdgd.webp');
+    }
+}
+
+/* Important Shortcuts */
+.important {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ece8e8;
+    padding: 20px 5%;
+}
+
+.important h2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.jk, .sem, .trans {
+    text-align: center;
+    flex: 1 1 20%;
+    margin: 10px;
+    max-width: 200px; /* optional limit */
+}
+
+.jk img, .sem img, .trans img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Bus Section */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.bus {
+    background-image: url('download111.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1 1 60%;
+    padding: 30px;
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+
+.bus h2 {
+    margin-bottom: 10px;
+}
+
+.bus h3 {
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.bus h5 {
+    background-color: rgb(243, 141, 141);
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 20px auto 0 auto;
+}
+
+/* Activity Table */
+.table {
+    flex: 1 1 35%;
+    height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Notice & New Uploads */
+.naac {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    gap: 20px;
+    background-color: #333;
+}
+
+.not {
+    flex: 1 1 40%;
+    background-color: #de4d4d;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not h1 {
+    color: white;
+}
+
+.new {
+    flex: 1 1 55%;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    padding: 20px;
+    color: white;
+}
+
+.new table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.new td {
+    padding: 10px;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
